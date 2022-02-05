@@ -1,26 +1,32 @@
 import React, { useState } from 'react';
-import { SafeAreaView, ScrollView, View } from 'react-native';
-import CategoriesList from '../components/categories/CategoryListView';
-import HeaderTabs from '../components/headerTabs/HeaderTabs';
-import { RestaurantItemList } from '../components/restaurantItem/RestaurantItemView';
-import { SearchBar } from '../components/searchBar/SearchBar';
+import { ScrollView, View, StatusBar } from 'react-native';
+import BottomTabsView from '../components/home/bottomTabs/BottomTabsView';
+import CategoryListView from '../components/home/categories/CategoryListView';
+import HeaderTabsView from '../components/home/headerTabs/HeaderTabs';
+import RestaurantItemListView from '../components/home/restaurantItem/RestaurantItemsListView';
+import SearchBarView from '../components/home/searchBar/SearchBar';
+import { Colors } from '../globals/GlobalStyles';
+import { mockCategories } from '../service/MockCategories';
 import { mockRestaurantItems } from '../service/MockRestaurantItems';
+import { Props } from '../types/RootStackParamList';
 
-const YELP_API_KEY = ''
-
-export default function Home() {
+const Home: React.FC<Props> = (props) => {
     const [restaurantListData, setRestaurantListData] = useState(mockRestaurantItems);
 
     return (
-        <SafeAreaView style={{ backgroundColor: "#eee", flex: 1 }}>
-            <View style={{ backgroundColor: 'white', padding: 15 }}>
-                <HeaderTabs />
-                <SearchBar />
+        <View style={{ flex: 1, backgroundColor: Colors.Grey }}>
+            <StatusBar barStyle={'dark-content'}></StatusBar>
+            <View style={{ backgroundColor: Colors.White, padding: 15 }}>
+                <HeaderTabsView />
+                <SearchBarView />
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <CategoriesList />
-                <RestaurantItemList items={restaurantListData} />
+                <CategoryListView items={mockCategories} />
+                <RestaurantItemListView items={restaurantListData} navigation={props.navigation} />
             </ScrollView>
-        </SafeAreaView >
+            <BottomTabsView />
+        </View >
     );
 }
+
+export default Home;
