@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { View, Image, Text } from 'react-native';
-import { CategoryItem } from '../../model/CategoryItem';
+import { CategoryItem } from '../../../model/CategoryItem';
 import { styles } from './Styles';
 
 const CategoryItemView = (props: { item: CategoryItem }) => {

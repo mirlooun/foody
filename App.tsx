@@ -1,13 +1,7 @@
-import Home from './app/screens/Home';
-import { SafeAreaView, StatusBar } from 'react-native';
+import RootNavigation from './app/navigation';
 
 const App = () => {
-  return (
-    <SafeAreaView style={{flex: 1}}>
-      <StatusBar barStyle={'dark-content'} />
-      <Home />
-    </SafeAreaView>
-  )
+  return <RootNavigation />
 }
 
 export default App;

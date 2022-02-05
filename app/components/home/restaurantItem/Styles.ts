@@ -1,12 +1,13 @@
 import { StyleSheet } from "react-native"
-import { Colors } from "../../globals/GlobalStyles"
+import { Colors } from "../../../globals/GlobalStyles"
 
 export const styles = StyleSheet.create({
     restaurantItemContainer: {
-        backgroundColor: Colors.White,
-        marginBottom: 30,
         marginTop: 10,
-        padding: 10
+        marginBottom: 5,
+        paddingHorizontal: 10,
+        paddingVertical: 15,
+        backgroundColor: Colors.White,
     },
     restaurantItemImage: {
         width: '100%',
@@ -24,11 +25,14 @@ export const styles = StyleSheet.create({
         alignItems: 'center'
     },
     restaurantItemRaitingContainer: {
-        backgroundColor: Colors.White,
+        backgroundColor: Colors.Grey,
         height: 30,
         width: 30,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 15
+    },
+    restaurantItemRaitingText: {
+        fontSize: 12
     }
 })

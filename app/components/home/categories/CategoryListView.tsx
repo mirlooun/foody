@@ -1,16 +1,16 @@
 import React from 'react';
 import { ScrollView, View } from 'react-native';
-import { CategoryItem } from '../../model/CategoryItem';
+import { CategoryItem } from '../../../model/CategoryItem';
 import CategoryItemView from './CategoryItemView';
 import { styles } from './Styles';
 
-const CategoryListView = (items: CategoryItem[]) => {
+const CategoryListView = (props: {items: CategoryItem[]}) => {
     return (
         <View style={styles.scrollContainer}>
             <ScrollView showsHorizontalScrollIndicator={false}
                 horizontal
                 style={styles.scrollBody}>
-                {items.map((item, index) => (
+                {props.items.map((item, index) => (
                     <CategoryItemView key={index} item={item} />
                 ))}
             </ScrollView>

@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "identikit",
-    "slug": "identikit",
+    "name": "Foody",
+    "slug": "Foody",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/images/bread.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./app/assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -21,7 +21,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./app/assets/images/bread.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.identikit"

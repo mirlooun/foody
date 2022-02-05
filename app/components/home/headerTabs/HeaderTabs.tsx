@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Text, SafeAreaView, TouchableOpacity, StyleSheet } from 'react-native';
-import { Colors } from '../../globals/GlobalStyles';
+import { Colors } from '../../../globals/GlobalStyles';
 import { styles } from './Styles';
 
-const HeaderTabs = () => {
+const HeaderTabsView = () => {
     const [active, setActive] = useState("Delivery");
 
     return (
@@ -32,4 +32,4 @@ const HeaderButton = (props: { text: string, isActive: boolean, setActive: Funct
     );
 }
 
-export default HeaderTabs;
+export default HeaderTabsView;
