@@ -15,7 +15,7 @@ export default function getBottomTabsList(): BottomTabItem[] {
         },
         {
             name: 'Grocery',
-            iconName: 'Grocery'
+            iconName: 'shopping-bag'
         },
         {
             name: 'Orders',
