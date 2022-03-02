@@ -1,13 +1,10 @@
-import { combineReducers, CombinedState } from 'redux';
-
-import cartReducer, { Action, State } from './cartReducer';
+import { combineReducers } from 'redux';
+import cartReducer from './cart-reducer';
 
 let reducers = combineReducers({
     cartReducer: cartReducer,
 })
 
-const rootReducer = (state: CombinedState<{ cartReducer: State, action: Action}>, action: Action) => {
-    return reducers(state, action)
-}
+export default reducers;
 
-export default rootReducer;
+export type State = ReturnType<typeof reducers>;

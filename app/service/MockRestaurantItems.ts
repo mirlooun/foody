@@ -1,25 +1,40 @@
-import { RestaurantItem } from "../model/RestaurantItem";
+import { Restaurant } from "../model/restaurant-item";
 
-export const mockRestaurantItems: RestaurantItem[] = [
+export const mockRestaurantItems: Restaurant[] = [
     {
-        name: "FIG Restaurant",
-        timeFoodReady: "35-45 • min",
-        rating: 4.5,
-        imageSource: require('../assets/images/bg1.jpg'),
-        categories: ['Fine Dining', 'Casual Dining']
+        title: "FIG Restaurant",
+        image: require('../assets/images/bg1.jpg'),
+        venue: {
+            online: true,
+            tags: ['Fine Dining', 'Casual Dining'],
+            estimate_range: "35-45",
+            rating: {
+                score: 4.5,
+            },
+        }
     },
     {
-        name: "LIT Restaurant",
-        timeFoodReady: "30-40 • min",
-        rating: 4,
-        imageSource: require('../assets/images/bg2.jpg'),
-        categories: ['Casual Dining', 'Contemporary Casual', 'Family Style']
+        title: "LIT Restaurant",
+        image: require('../assets/images/bg2.jpg'),
+        venue: {
+            online: true,
+            tags: ['Casual Dining', 'Contemporary Casual', 'Family Style'],
+            estimate_range: "30-40",
+            rating: {
+                score: 4.7,
+            },
+        }
     },
     {
-        name: "Hesburger",
-        timeFoodReady: "15-20 • min",
-        rating: 5,
-        imageSource: require('../assets/images/bg3.jpg'),
-        categories: ['Fast Casual', 'Fast Food']
+        title: "Hesburger",
+        image: require('../assets/images/bg3.jpg'),
+        venue: {
+            online: true,
+            tags: ['Fast Casual', 'Fast Food'],
+            estimate_range: "15-20",
+            rating: {
+                score: 5,
+            },
+        }
     },
 ]

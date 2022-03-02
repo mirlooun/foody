@@ -1,4 +1,19 @@
-Install vector icons
+To run the project Expo cli is required.
+
 ~~~
-npm i react-native-vector-icons
+npm install --global expo-cli
 ~~~
+
+__Don't forget to run this command__
+
+~~~
+npm install
+~~~
+
+To start the project use:
+
+~~~
+npm start
+~~~
+
+

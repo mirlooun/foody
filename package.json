@@ -1,38 +1,53 @@
 {
-  "name": "identikit",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
-  },
-  "dependencies": {
-    "@react-navigation/native": "^6.0.8",
-    "@react-navigation/stack": "^6.1.1",
-    "@types/react-native-vector-icons": "^6.4.10",
-    "expo": "~44.0.0",
-    "expo-splash-screen": "~0.14.1",
-    "expo-status-bar": "~1.2.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-bouncy-checkbox": "^2.1.10",
-    "react-native-elements": "^3.4.2",
-    "react-native-gesture-handler": "^2.2.0",
-    "react-native-google-places-autocomplete": "^2.4.1",
-    "react-native-safe-area-context": "3.3.2",
-    "react-native-screens": "~3.10.1",
-    "react-native-vector-icons": "^9.0.0",
-    "react-native-web": "0.17.1",
-    "tslib": "^2.3.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@types/react": "~17.0.21",
-    "@types/react-native": "~0.64.12",
-    "typescript": "~4.3.5"
-  },
-  "private": true
+    "name": "identikit",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "expo start --dev-client",
+        "android": "expo run:android",
+        "ios": "expo run:ios",
+        "web": "expo start --web",
+        "eject": "expo eject"
+    },
+    "dependencies": {
+        "@react-navigation/native": "^6.0.8",
+        "@react-navigation/stack": "^6.1.1",
+        "@reduxjs/toolkit": "^1.7.2",
+        "@types/react-native-vector-icons": "^6.4.10",
+        "axios": "^0.25.0",
+        "expo": "~44.0.0",
+        "expo-splash-screen": "~0.14.1",
+        "expo-status-bar": "~1.2.0",
+        "intl": "^1.2.5",
+        "jsc-android": "^250230.2.1",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-native": "0.64.3",
+        "react-native-bouncy-checkbox": "^2.1.10",
+        "react-native-dotenv": "^3.3.1",
+        "react-native-elements": "^3.4.2",
+        "react-native-gesture-handler": "^2.2.0",
+        "react-native-google-places-autocomplete": "^2.4.1",
+        "react-native-reanimated": "^2.4.1",
+        "react-native-safe-area-context": "3.3.2",
+        "react-native-screens": "~3.10.1",
+        "react-native-vector-icons": "^9.0.0",
+        "react-native-web": "0.17.1",
+        "react-redux": "^7.2.6",
+        "reanimated-bottom-sheet": "^1.0.0-alpha.22",
+        "tslib": "^2.3.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.9",
+        "@types/react": "~17.0.21",
+        "@types/react-native": "~0.64.12",
+        "@types/react-native-dotenv": "^0.2.0",
+        "typescript": "~4.3.5"
+    },
+    "private": true,
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": true
+    }
 }
