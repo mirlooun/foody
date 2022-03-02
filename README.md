@@ -15,5 +15,3 @@ To start the project use:
 ~~~
 npm start
 ~~~
-
-

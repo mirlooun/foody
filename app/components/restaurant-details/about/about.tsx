@@ -36,7 +36,7 @@ const RestaurantName = ({ name }: { name: string }) => (
 
 const RestaurantDescription = ({ description }: { description: string }) => (
     <View>
-        <Text>{description}</Text>
+        <Text>{description} min</Text>
     </View>
 );
 
